@@ -1,0 +1,58 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hiberna te/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	    <property name="hibernate.hbm2ddl.auto">update</property>
+	    <property name="hibernate.hbm2ddl.auto">create</property>
+
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Trufinha!123</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/infograficos</property>
+	   	
+		
+		<!-- 		
+				
+	   	<property name="hibernate.connection.username">infograficos</property>
+		<property name="hibernate.connection.password">Trufinha123</property>
+		<property name="hibernate.connection.url">jdbc:mysql://mysql.infograficos.kinghost.net/infograficos</property>	
+		
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/infograficos</property> 		
+		
+		-->
+		
+		
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property><property name="show_sql">true</property >
+		
+		
+		<property name="hibernate.connection.autoReconnect">true</property>
+        <property name="hibernate.connection.autoReconnectForPools">true</property>
+         
+        <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>  
+		<property name="hibernate.c3p0.min_size">1</property>  
+		<property name="hibernate.c3p0.max_size">100</property>  
+		<property name="hibernate.c3p0.max_statements">0</property>
+		<property name="hibernate.c3p0.idle_test_period">100</property> 
+		<property name="hibernate.c3p0.timeout">3000</property>  
+		<property name="format_sql">true </property>
+		
+
+		<mapping class="br.com.egame.modelo.User" />
+		<mapping class="br.com.egame.modelo.Questoes" />
+		<mapping class="br.com.egame.modelo.Questoespos" />
+		<mapping class="br.com.egame.modelo.QuestHumor" />
+		<mapping class="br.com.egame.modelo.Respostas" />
+		<mapping class="br.com.egame.modelo.RespostasEstilo" />
+		<mapping class="br.com.egame.modelo.Respostaspos" />
+		<mapping class="br.com.egame.modelo.LogQuestoes" />
+		<mapping class="br.com.egame.modelo.LogQuestoesPos" />
+		
+		
+		
+		
+	</session-factory>
+</hibernate-configuration>
+
