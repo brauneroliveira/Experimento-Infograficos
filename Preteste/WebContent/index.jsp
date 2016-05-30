@@ -1,0 +1,1 @@
+<h3>Bem vindo ao Experimento aprendizado por infográficos!</h3>
