@@ -1,0 +1,76 @@
+.title {
+	color: #fff;
+	background-color: #089bc3;
+	text-align: center;
+	margin: 30px 0;
+	padding: 20px 0;
+	font-size: 24px;
+	font-weight: 100;
+}
+
+.desc {
+	font-size: 26px;
+	margin-top: 20px;
+}
+
+.group div {
+	float: left;
+}
+
+.group {
+	clear: both;
+	height: 80px;
+	width: 700px;
+	margin: 0 auto 25px;
+}
+
+.dimension {
+    width: 230px;
+}
+
+.dimension.r  .desc {
+	text-align: left;
+	margin-left: 12px;
+}
+
+.dimension.l .desc {
+	text-align: right;
+	margin-right: 12px;
+	float: right;
+}
+
+.dimension.l img {
+	float: right;
+}
+
+.dimension img {
+	float: left;
+}
+
+.values {
+	background: url('../images/estilos/slider.svg') no-repeat center center;    
+    height: 65px;
+    width: 180px;
+    margin: 0 20px;
+    padding: 8px 0 0;
+    box-sizing: border-box;
+}
+
+.value {
+	width: 20px;
+	height: 20px;
+	margin: 14px 5px 0;
+}
+
+.value.selected {
+	background: url('../images/estilos/pointer.svg') no-repeat center center;
+}
+
+.value.selected:first-child { 
+    margin-left: 0;
+}
+
+.value.selected:last-child { 
+    margin-right: 0px;
+    margin-left: 10px
+}
